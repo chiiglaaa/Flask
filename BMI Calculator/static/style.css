@@ -1,0 +1,68 @@
+html{
+    background: linear-gradient(to bottom, #72A1E5, #D33F49);
+    background-repeat: repeat-x;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.bmi-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bmi-calculator form {
+    color: #0B2027;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.bmi-calculator form input[type="number"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #0B2027;
+}
+
+.bmi-calculator form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #0B2027;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bmi-result {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+

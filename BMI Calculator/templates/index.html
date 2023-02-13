@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BMI Calculator.</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div>
+      <h1 style="color: #0B2027; font-size: 40px; font-family: Arial, sans-serif;">BMI Calculator.</h1>
+      <div class="bmi-calculator">
+          <form class="pure-form" method="POST" action="/" style="color: #0B2027;">
+              Weight in kg:<br>
+              <input type="number" name="weight" style="color: #FF9000;"><br>
+              Height in cm:<br>
+              <input type="number" name="height" style="color: #FF9000;"><br>
+              <button type="submit" class="pure-button pure-button-primary" value="submit">Calculate</button>
+          </form>
+      </div>
+    </div>
+    <div class="bmi-result" style="color: #FF9000;">
+      {% if weight and height %}
+        <p style="color: #0B2027; font-size: 20px; font-family: Arial, sans-serif;">Your BMI is: {{ bmi }}</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
